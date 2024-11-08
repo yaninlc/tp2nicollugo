@@ -1,0 +1,174 @@
+/* Estilo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7e0e9;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #ff66b2;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    color: white;
+}
+
+/* Navegación */
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav button {
+    background-color: #ff66b2;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+nav button a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav button:hover {
+    background-color: #ff3385;
+}
+
+/* Sección Principal */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    color: #ff66b2;
+}
+
+section p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Tabla de empleados */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+th {
+    background-color: #ff66b2;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Imágenes de empleados */
+.imagen-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+}
+
+.empleado {
+    text-align: center;
+    width: 180px;
+}
+
+.empleado img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #ff66b2;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+
+.empleado img:hover {
+    transform: scale(1.1);
+}
+
+.empleado p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #ff66b2;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    color: white;
+    font-size: 1rem;
+}
+
+/* Media Queries para hacer responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav button {
+        width: 100%;
+        padding: 12px 0;
+        font-size: 1.1rem;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    .imagen-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .empleado img {
+        width: 120px;
+        height: 120px;
+    }
+}
