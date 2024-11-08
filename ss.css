@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f7e0e9;
+    background-color: #e75a90;
     color: black;
     margin: 0;
     padding: 0;
@@ -87,7 +87,7 @@ th, td {
 }
 
 th {
-    background-color: #ff66b2;
+    background-color: #cf0d6e;
     color: white;
 }
 
@@ -133,7 +133,7 @@ tr:nth-child(even) {
 
 /* Pie de página */
 footer {
-    background-color: #ff66b2;
+    background-color: #e00472;
     text-align: center;
     padding: 10px;
     position: fixed;
